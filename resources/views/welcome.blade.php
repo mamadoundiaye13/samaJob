@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Bienvenue dans samaJob
                 </div>
 
                 <div class="links">
