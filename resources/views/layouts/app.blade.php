@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'samaJob') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -18,13 +18,15 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
+
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <nav class="navbar navbar-expand-md bg-primary sticky-top navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxdSfYf9DW9koH2nyLuNve99m5uWpAXye4jWTv4vbUYwaY464J" class="active" alt="logo" height="100">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -33,8 +35,28 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Les Alternances</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Les Jobs</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Références</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Bibliographie</a>
+                        </li>
                     </ul>
+
+                    <form action="/" method="get" class="form-inline">
+                        <div class="input-group">
+                            <input type="text" name="search" class="form-control" placeholder="Je cherche...">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-secondary"><span class="fa fa-search"></span> Chercher</button>
+                            </span>
+                        </div>
+                    </form>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

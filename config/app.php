@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => 'samaJob',
 
     /*
     |--------------------------------------------------------------------------
@@ -169,11 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        samaJob\Providers\AppServiceProvider::class,
+        samaJob\Providers\AuthServiceProvider::class,
+        // samaJob\Providers\BroadcastServiceProvider::class,
+        samaJob\Providers\EventServiceProvider::class,
+        samaJob\Providers\RouteServiceProvider::class,
 
     ],
 
